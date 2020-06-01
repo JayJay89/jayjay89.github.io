@@ -139,17 +139,22 @@ $enable-deprecation-messages:                 true;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
+
 $spacer: 1rem;
 $spacers: ();
 // stylelint-disable-next-line scss/dollar-variable-default
 $spacers: map-merge(
   (
     0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    1: ($spacer * 0.25),
+    2: ($spacer * 0.50),
+    3: ($spacer * 0.75),
+    4: $spacer,
+    5: ($spacer * 1.25),
+    6: ($spacer * 1.50),
+    7: ($spacer * 2.50),
+    8: ($spacer * 4.00),
+    9: ($spacer * 6.50)
   ),
   $spacers
 );
