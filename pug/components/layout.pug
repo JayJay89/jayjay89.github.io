@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    block header-title
+    link(rel="stylesheet" href="style.css")
+
+  body
+    .row
+      .col-2.sidebar.bg-secondary
+        include sidebar
+      .col.content
+        block content-header
+          h1 Content
+        block content-template

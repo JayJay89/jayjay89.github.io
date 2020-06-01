@@ -1,0 +1,18 @@
+- var pages = ['index','spacing','color']
+- var comp = ['alerts']
+
+a.text-white.text-capitalize(href=`index.html`) Home
+
+h6 Tokens
+
+ul
+  each val in pages
+    li
+      a.text-white.text-capitalize(href=`${val}.html`) #{val}
+
+h6 components
+
+ul
+  each val in comp
+    li
+      a.text-white.text-capitalize(href=`${val}.html`) #{val}
