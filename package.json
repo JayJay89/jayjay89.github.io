@@ -1,9 +1,17 @@
 {
+  "name": "piktonext-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "popper.js": "^1.16.1",
     "watch": "^1.0.2"
+  },
+  "scripts": {
+    "css:compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/custom.scss style.css",
+    "watch": "watch 'yarn css:compile' scss"
   }
 }
