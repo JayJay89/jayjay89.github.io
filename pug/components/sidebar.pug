@@ -6,7 +6,7 @@ mixin list(pages, category)
   h6.border-bottom.pb-2.text-dark= category  
   ul.list-group.list-group-flush.mb-4
     each url in pages
-      li.list-group-item.bg-transparent.py-1.border-0
+      li.list-group-item.bg-transparent.py-1.border-0.pl-3
         a.text-white.text-capitalize.mb-4(href=`${url}.html`)= url
 
 +list(homePage, 'Home')
