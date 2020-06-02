@@ -1,18 +1,20 @@
-- var pages = ['index','spacing','color']
+- var pages = ['spacing','color']
 - var comp = ['alerts']
 
-a.text-white.text-capitalize(href=`index.html`) Home
 
-h6 Tokens
+ul.list-group.list-group-flush
+  a.text-white.text-capitalize.mb-4(href=`index.html`) Home
 
-ul
+h6.border-bottom.pb-2.text-dark Tokens
+
+ul.list-group.list-group-flush
   each val in pages
-    li
+    li.list-group-item.bg-transparent.py-1.border-0
       a.text-white.text-capitalize(href=`${val}.html`) #{val}
 
-h6 components
+h6.border-bottom.pb-2.text-dark Components
 
-ul
+ul.list-group.list-group-flush
   each val in comp
-    li
+    li.list-group-item.bg-transparent.py-1.border-0
       a.text-white.text-capitalize(href=`${val}.html`) #{val}

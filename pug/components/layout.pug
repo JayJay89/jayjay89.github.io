@@ -7,10 +7,10 @@ html(lang='en')
     link(rel="stylesheet" href="style.css")
 
   body
-    .row
-      .col-2.sidebar.bg-secondary
+    .d-flex
+      .ds-sidebar.bg-secondary.vh-100.p-4
         include sidebar
-      .col.content
+      .ds-main-content.vh-100.p-4
         block content-header
           h1 Content
         block content-template

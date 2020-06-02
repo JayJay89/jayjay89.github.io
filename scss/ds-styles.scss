@@ -1,0 +1,8 @@
+$ds-sidebar-width: 200px;
+
+.ds-sidebar {
+  width: $ds-sidebar-width;
+}
+.ds-main-content {
+  width: calc(100vw - #{$ds-sidebar-width});
+}

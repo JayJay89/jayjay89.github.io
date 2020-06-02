@@ -10876,4 +10876,12 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.ds-sidebar {
+  width: 200px;
+}
+
+.ds-main-content {
+  width: calc(100vw - 200px);
+}
+
 /*# sourceMappingURL=style.css.map */
